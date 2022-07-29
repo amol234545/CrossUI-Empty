@@ -37,7 +37,18 @@ xui.Class('App', 'xui.Module',{
                 .setTop("19.80952380952381em")
                 .setWidth("12.19047619047619em")
                 .setHeight("3.3523809523809525em")
+                .setZIndex(2)
                 .setCaption("Signup")
+                .onClick([
+                    {
+                        "desc" : "Action 1",
+                        "type" : "page",
+                        "target" : "App.signup",
+                        "args" : [true],
+                        "method" : "switch",
+                        "event" : 1
+                    }
+                ])
             );
             
             append(
@@ -49,7 +60,6 @@ xui.Class('App', 'xui.Module',{
                 .setLabelSize("8em")
                 .setLabelCaption("Password")
                 .setType("password")
-                .setValue("pwd")
             );
             
             append(
