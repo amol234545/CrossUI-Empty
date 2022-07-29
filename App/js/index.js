@@ -19,7 +19,51 @@ xui.Class('App', 'xui.Module',{
         iniComponents : function(){
             // [[Code created by CrossUI RAD Studio
             var host=this, children=[], append=function(child){children.push(child.get(0));};
-
+            
+            append(
+                xui.create("xui.UI.HTMLButton")
+                .setHost(host,"xui_ui_htmlbutton3")
+                .setLeft("9.904761904761905em")
+                .setTop("19.80952380952381em")
+                .setWidth("12.19047619047619em")
+                .setHeight("3.3523809523809525em")
+                .setCaption("Signin")
+            );
+            
+            append(
+                xui.create("xui.UI.HTMLButton")
+                .setHost(host,"xui_ui_htmlbutton4")
+                .setLeft("23.61904761904762em")
+                .setTop("19.80952380952381em")
+                .setWidth("12.19047619047619em")
+                .setHeight("3.3523809523809525em")
+                .setCaption("Signup")
+            );
+            
+            append(
+                xui.create("xui.UI.Input")
+                .setHost(host,"xui_ui_input5")
+                .setLeft("15.238095238095237em")
+                .setTop("16em")
+                .setWidth("18em")
+                .setLabelSize("8em")
+                .setLabelCaption("Password")
+                .setType("password")
+                .setValue("pwd")
+            );
+            
+            append(
+                xui.create("xui.UI.Input")
+                .setHost(host,"xui_ui_input6")
+                .setLeft("15.238095238095237em")
+                .setTop("11.428571428571429em")
+                .setWidth("18em")
+                .setHeight("2.361904761904762em")
+                .setLabelSize("8em")
+                .setLabelCaption("Username")
+                .setMultiLines(true)
+            );
+            
             return children;
             // ]]Code created by CrossUI RAD Studio
         },
